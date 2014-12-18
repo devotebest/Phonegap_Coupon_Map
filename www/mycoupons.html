@@ -1,0 +1,32 @@
+<div data-role="page" id="mycoupons-page" data-url="mycoupons-page">
+    <!--start header-->
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" class="header">
+        <h1>My Coupons</h1>
+        <a href="javascript:openCloseMenu('nav-panel');" data-iconpos="notext" data-icon="cmenu" data-corners="false"></a>
+        <a href="#searchmycoupons-page" data-iconpos="notext" data-icon="csearch" data-corners="false"></a>
+    </div>
+    <!-- /header -->
+    <!--start main content-->
+    <div role="main" class="ui-content pattern _ezswipe">
+        <div data-role="tabs" id="mycouponstabs" data-theme="b">
+            <div data-role="navbar" data-theme="b">
+                <ul>
+                    <li><a href="#" data-theme="b" id="btnMyCouponAZ">A-Z</a></li>
+                    <li><a href="#" data-theme="b" id="btnMyCouponPercent">%OFF</a></li>
+                    <li><a href="#" data-theme="b" id="btnMyCouponCia">Company</a></li>
+                    <li><a href="#" data-theme="b" id="btnMyCouponExp">Expiring</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="mycouponscont" style="padding-bottom: 30px;">
+        </div>
+        <div style="width: 100%; position: fixed; padding-top:0px; margin-top:0px; bottom: 0;" class="pattern">
+            <button data-role="button" style="width: 95%; margin-right: auto; margin-left: auto;" onclick="MyCoupons.redeemSelected();" data-theme="a" id="btnRedemSelected" disabled>Redeem selected</button>
+        </div>
+    </div>
+    <!--/. end main content-->
+    <!--nav bar panel-->
+    <div data-role="panel" data-position-fixed="true" data-display="push" class="side_nav" id="nav-panel" data-swipe-close="false">
+    </div>
+    <!-- /panel -->
+</div>

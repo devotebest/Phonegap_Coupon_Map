@@ -1,0 +1,83 @@
+﻿<script id="coupon-a" type="text/html">
+    <div class="ui-block-a">
+        <div class="small_box rl">
+            <a href="javascript:CouponCtrl.couponDetail('{{id}}');">
+                <div class="offer_box">
+                    <div>
+                        <div>
+                            {{promo_text_short}}
+                        </div>
+                    </div>
+                </div>
+                <img src="{{coupon_thumbnail}}" class="img_responsive" alt="">
+            </a>
+            <span class="prd_name">{{name}}</span>
+        </div>
+    </div>
+</script>
+
+<script id="coupon-b" type="text/html">
+    <div class="ui-block-b">
+        <div class="small_box rl">
+            <a href="javascript:CouponCtrl.couponDetail('{{id}}');">
+                <div class="offer_box">
+                    <div>
+                        <div>
+                            {{promo_text_short}}
+                        </div>
+                    </div>
+                </div>
+                <img src="{{coupon_thumbnail}}" class="img_responsive" alt="">
+            </a>
+            <span class="prd_name">{{name}}</span>
+        </div>
+    </div>
+</script>
+
+<script id="coupon-c" type="text/html">
+    <div class="ui-block-c">
+        <div class="small_box rl">
+            <a href="javascript:CouponCtrl.couponDetail('{{id}}');">
+                <div class="offer_box">
+                    <div>
+                        <div>
+                            {{promo_text_short}}
+                        </div>
+                    </div>
+                </div>
+                <img src="{{coupon_thumbnail}}" class="img_responsive" alt="">
+            </a>
+            <span class="prd_name">{{name}}</span>
+        </div>
+    </div>
+</script>
+
+
+
+<script id="coupon-aux" type="text/html">
+    <li>
+        <div class="small_box rl bgloading">
+            <a href="javascript:CouponCtrl.couponDetail('{{id}}');">
+                <div class="offer_box">
+                    <div>
+                        <div>
+                            {{promo_text_short}}
+                        </div>
+                    </div>
+                </div>
+                <!--<img src="{{coupon_thumbnail}}" class="img_responsive imgLazy" alt="">-->
+                <!-- <img class="lazy" data-original="{{coupon_thumbnail}}" src="images/spinner.gif" border="0" alt="" />-->
+                <img src="images/transparent.png" data-src="{{coupon_thumbnail}}" data-src-retina="{{coupon_thumbnail}}" />
+            </a>
+            <span class="prd_name">{{name}}</span>
+        </div>
+    </li>
+</script>
+
+<script id="see-all-item" type="text/html">
+    <li onclick="HomeCtrl.seeAllCoupons('{{name}}');">
+        <div class="see-all-box rl">
+            <span>See All</span>
+        </div>
+    </li>
+</script>

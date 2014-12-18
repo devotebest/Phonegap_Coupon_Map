@@ -1,0 +1,71 @@
+<div data-role="page" id="coupon-page" data-url="coupon-page">
+    <div data-role="header" id="couponDetail" data-position="fixed" data-tap-toggle="false" class="header">
+
+        <a href="javascript:CouponCtrl.backAction();" data-iconpos="notext" data-icon="cback" data-corners="false" class="back" id="btnBackCoupon"></a>
+        <a href="#add-form" data-iconpos="notext" data-icon="cmap" data-corners="false" onclick="CouponCtrl.seeStoreMap();"></a>
+    </div>
+    <!-- /header -->
+    <!--start main content-->
+    <div role="main" class="ui-content headerSpace" style="background: #FFFFFF;">
+        <!--coupon box-->
+        <div class="coupon_box padding_around rl">
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <!--<div class="compay_logo"><img src="images/company_logo.jpg" class="lrd_img" alt=""></div>-->
+                    <div class="prd_preview">
+                        <img id="imgCouponDet" src="" class="img_responsive" alt="">
+                    </div>
+
+                </div>
+                <div class="ui-block-b">
+                    <div class="expire_date">
+                        <span id="lblExpireDate"></span>
+                    </div>
+
+                    <div class="free_text" id="lblPromoText">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui-grid-a pr_detail" id="lblCouponDetail">
+            </div>
+            <div class="my_coupon">
+                <span class="krc">
+                    <img src="images/crs.png" alt="">
+                </span>
+                MOBILE<br>
+                COUPON
+            </div>
+        </div>
+        <!--/. endcoupon box-->
+        <!--coupon status-->
+        <div class="ui-grid-a">
+            <ul class="coupon_nav">
+                <li>
+                    <a href="#" id="btnRedeemNow">
+                        <img src="images/use_now.png" alt=""><br>
+                        Use Now
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="btnAddToMyCoupons">
+                        <img src="images/save_coupon.png" alt=""><br>
+                        Save to
+                        My Coupons
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--/. end coupon status-->
+
+        <div class="ui-grid-a offer_details">
+            <p class="title">Offer Details</p>
+            <p style="height: 8px"></p>
+            <p id="lblCouponOfferDetail"></p>
+            <p style="height: 10px"></p>
+            <p style="text-align: center;" id="buttonTermsContainer"></p>
+        </div>
+    </div>
+    <!--/. end main content-->
+
+</div>

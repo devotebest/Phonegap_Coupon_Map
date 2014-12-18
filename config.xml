@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.golden.couwalla" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Couwalla</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+	<preference name="Orientation" value="portrait" />
+	<preference name="KeyboardShrinksView" value="true" />
+	
+	<!-- <platform name="android">
+		<splash src="res/drawable-port-hdpi/screen.png" density="port-hdpi"/>
+		<splash src="res/drawable-port-ldpi/screen.png" density="port-ldpi"/>
+		<splash src="res/drawable-port-mdpi/screen.png" density="port-mdpi"/>
+		<splash src="res/drawable-port-xhdpi/screen.png" density="port-xhdpi"/>
+	</platform> -->
+	<preference name="SplashScreen" value="screen" />
+	<preference name="SplashScreenDelay" value="13000" />
+</widget>

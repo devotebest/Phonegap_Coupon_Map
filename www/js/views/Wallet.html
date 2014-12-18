@@ -1,0 +1,14 @@
+﻿<script id="wallet-card" type="text/html">
+	<ul data-role="listview" id="lstWalletCards" data-icon="false"  data-split-icon="false">
+		{{#list}}
+        <li data-theme="c" data-icon='false'>
+			<a href="javascript:WalletCtrl.cardDetail('{{id}}');" data-icon="carat-r" data-iconpos="right">
+				<img src="{{img_front}}" />
+				<p class="myParagraph">{{name}}</p>
+				<p class="myParagraph">{{barcode}}</p>				
+			</a>
+			<a href="javascript:WalletDB.deleteCard({{id}});" data-role="button" data-inline="true" data-mini="true" data-icon="false" style="display: none;" class="deleteListItem">Delete</a>
+		</li>
+		{{/list}}
+	</ul>
+</script>

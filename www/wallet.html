@@ -1,0 +1,30 @@
+﻿<div data-role="page" id="wallet-page" data-url="wallet-page">
+    <!--start header-->
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" class="header">
+        <h1>Wallet</h1>
+        <a href="javascript:openCloseMenu('nav-panel');" data-iconpos="notext" data-icon="cmenu" data-corners="false"></a>
+        <a href="#" data-role="button" data-icon="false" class="ui-btn-right" onclick="WalletCtrl.openNewCard();" id="btnWalletAddNew">Add</a>
+    </div>
+    <!-- /header -->
+    <!--start main content-->
+    <div role="main" class="ui-content padding_zero pattern _ezswipe">
+        <div id="divNoCards" style="width:100%; height:100%;">
+            <div style="width: 100%; text-align: center;">
+                <p style="color: #2eb135; font-size: 2.2em; font-weight: bold;">How to Add and Use Your Wallet</p>
+                <p>Adding your loyalty cards to Couwalla is a great way to ensure you get the best savings.</p>
+                <p>To Add your loyalty cards ti Couwalla, simply click the button below and follow the simple wizard.</p>
+            </div>
+            <div style="width: 97%; text-align: center;  display:block; margin-left:auto; margin-right:auto;">
+                <a href="javascript:void(0);" data-role="button" onclick="WalletCtrl.openNewCard();">Add Loyalty Cards</a>
+            </div>
+        </div>
+        <div id="divListCards" style="width:100%; height:100%;">
+        </div>
+    </div>
+    <!--/. end main content-->
+    <!--nav bar panel-->
+    <div data-role="panel" data-position-fixed="true" data-display="push" class="side_nav" id="nav-panel" data-swipe-close="false">
+
+    </div>
+    <!-- /panel -->
+</div>

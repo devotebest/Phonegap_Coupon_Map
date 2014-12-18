@@ -1,0 +1,39 @@
+﻿<div data-role="page" id="new-loyalty-page" data-url="new-loyalty-page">
+	<!--start header-->
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" class="header">
+		<h1 class="headerTitle">New Wallet Card</h1>
+		<a href="javascript:WalletCtrl.cardBackAction();" data-iconpos="notext" data-icon="cback" data-corners="false" class="back" id="btnBackCoupon"></a>
+		<a href="#" data-role="button" data-icon="false" class="ui-btn-right" id="btnNewCardSave">Save</a>
+	</div>
+	<!-- /header -->
+	<!--start main content-->
+	<div role="main" class="ui-content pattern">
+		<div style="width: 90%; margin-left: auto; margin-right: auto;">
+			<input data-theme="c" type="text" placeholder="Loyalty Card Name" id="txtLoyaltyCardName" />
+		</div>
+		<h3 style="text-align:center;">Add Photos of Card</h3>
+
+		<div style="width: 100%; display: block; height: 230px;">
+			<div style="width: 350px; margin-right: auto; margin-left: auto;">
+				<div style="display: inline-block; float: left;">
+					<img id="imgFrontCard" style="width: 160px; height: 160px;" />
+					<a data-role="button"href="#" onclick="WalletCtrl.takePicture('imgFrontCard');">Front</a>
+				</div>
+				<div style="display: inline-block; float: right;">
+					<img id="imgBackCard" style="width: 160px; height: 160px;" />
+					<a data-role="button" href="#" onclick="WalletCtrl.takePicture('imgBackCard');">Back</a>
+				</div>
+			</div>
+		</div>
+		<h3 style="margin-top:10px; text-align:center;">Add Barcode</h3>
+		<div id="imgBarCodeScanned">
+		</div>
+		<a data-role="button" href="#" onclick="WalletCtrl.scanCode();">Scan</a>
+		<a data-role="button" style="margin-top:10px;" href="javascript:WalletCtrl.EnterManuallyBTN();">Enter Manually</a>
+		<div style="width: 90%; margin-left: auto; margin-right: auto; margin-top:10px;">
+			<input data-theme="c" type="number" id="txtManuallyBarCode" readonly="true"/>
+		</div>
+		
+	</div>
+	<!--/. end main content-->
+</div>

@@ -1,0 +1,77 @@
+﻿<script id="mycoupons-list" type="text/html">
+    <ul data-role="listview" class="listCoupons" id="listContent" data-theme="c">
+        {{#list}}
+        <li>
+            <table onclick="CouponCtrl.couponDetail('{{id}}');" class="mycoupon-item">
+                <tr>
+                    <td style="width: 110px; padding:0px; margin:0px;">
+                        <img src="{{coupon_thumbnail}}" class="imgLazy" />
+                    </td>
+                    <td style="height: 37px; padding: 0px; margin: 0px;" class="detail" rowspan="2">
+                        <h1 class="myHeader">{{name}}</h1>
+                        <p class="myParagraph">{{promo_text_short}}</p>
+                        <p class="myParagraph">{{promo_text_long}}</p>
+                        <p class="myParagraph">Expires on {{expiry_date}}</p>
+                    </td>
+                    <td style="width: 40px; padding: 0px; margin: 0px;" class="check-coupon" rowspan="2">
+                        <img src="images/uncheck2.png" data-idcoupon="{{id}}" onclick="MyCoupons.check(this, '#btnRedem_{{id}}');" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0px; margin: 0px;">
+                        <input type="button" data-mini="true" data-inline="true" onclick="MyCoupons.redeem({{id}});" data-role="button" style="width: 90px" data-theme="a" id="btnRedem_{{id}}" value="Redeem" />
+                    </td>
+                </tr>
+            </table>
+        </li>
+        {{/list}}
+    </ul>
+</script>
+
+<script id="redeemcoupon-list" type="text/html">
+    {{#list}}
+    <div style="display: block; width: 100%;" class="pattern">
+        <table style="width: 100%;">
+            <tr>
+                <td style="text-align: left">
+                    {{name}}
+                </td>
+                <td style="text-align: right">
+                    <a href="javascript:void(0);" class="redeemcouponitm" data-idcoupon="{{id}}" data-role="link">*TERMS & CONDITIONS APPLY</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <div style="width: 94%; background: #FFFFFF; margin-left: 3%; margin-right: 3%; border-radius: 10px; margin-bottom: 10px; text-align: center; padding-top: 10px; ">
+                        <!--<img src="{{barcode_image}}" class="imgLazy barcode" /><br />-->
+                        <div class="barcode" style="height: 90px; margin-left: auto; margin-right: auto; display: inline-block; "></div>
+                        <span style="font-size: 12px; display: block;">*To finalize your coupon redemtion, please click the redeem button above.</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    {{/list}}
+</script>
+
+<script id="searchmycoupons-list" type="text/html">
+    <ul data-role="listview" id="listContentsearchmycoupons" data-theme="c">
+        {{#list}}
+        <li>
+            <table onclick="CouponCtrl.couponDetail('{{id}}');" class="mycoupon-item">
+                <tr>
+                    <td style="width: 110px;" rowspan="2">
+                        <img src="{{coupon_thumbnail}}" class="imgLazy" />
+                    </td>
+                    <td class="detail">
+                        <h1 class="myHeader">{{customer_name}}</h1>
+                        <p class="myParagraph">{{promo_text_short}}</p>
+                        <p class="myParagraph">{{promo_text_long}}</p>
+                        <p class="myParagraph">Expires on {{expiry_date}}</p>
+                    </td>
+                </tr>
+            </table>
+        </li>
+        {{/list}}
+    </ul>
+</script>

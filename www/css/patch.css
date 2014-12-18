@@ -1,0 +1,883 @@
+﻿:not(input) {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    -o-user-select: none !important;
+    user-select: none !important;
+}
+
+.all_products .small_box .prd_name {
+    font-size: 12px;
+    padding: 5px 5px 10px 5px;
+}
+
+.ui-page {
+    -webkit-backface-visibility: hidden;
+}
+
+.bgloading {
+    background-image: url(../images/spinner.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 40px 40px;
+}
+
+.all_products .small_box .offer_box {
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: normal;
+    width: 35px;
+    max-width: 35px;
+    min-width: 35px;
+    height: 25px;
+    line-height: 10px;
+    padding: 0px;
+    display: table;
+    overflow: hidden;
+}
+
+    .all_products .small_box .offer_box > div {
+        display: table-cell;
+        vertical-align: middle;
+        word-wrap: break-word;
+    }
+
+        .all_products .small_box .offer_box > div > div {
+            width: 35px;
+            word-wrap: break-word;
+        }
+
+.all_products .small_box {
+    height: 99%;
+    margin-top: 1%;
+}
+
+.ui-btn-left {
+    margin-left: 5px !important;
+}
+
+.ui-btn-right {
+    margin-right: 5px !important;
+}
+
+/*########### CONTENT #####################*/
+.index {
+    height: 100%;
+    overflow-y: no-display !important;
+}
+
+.ui-panel-wrapper {
+    height: 100%;
+}
+
+.ui-content {
+    height: 100%;
+    width: 100%;
+    padding-left: 0px;
+    overflow-y: no-display;
+    position: absolute;
+    top: 0px;
+}
+
+    .ui-content::before {
+        /*display: block !important;
+        height: 53px !important;
+        content: '';*/
+    }
+
+.headerSpace::before {
+    display: block !important;
+    height: 55px !important;
+    content: '';
+}
+
+.headerIndexPatch::before {
+    display: block !important;
+    height: 0px !important;
+    content: '';
+}
+
+.content-bg-black {
+    background-color: #272727;
+    background: url(../images/side_nav_bg.png);
+    background-repeat: repeat;
+    color: #FFFFFF;
+}
+
+    .content-bg-black div {
+        margin-top: 4px;
+        /*height: 35px;*/
+    }
+
+        .content-bg-black div img {
+            display: inline;
+            height: 20px;
+            margin-top: 1px;
+        }
+
+        .content-bg-black div label {
+            display: inline;
+            margin-left: 5px;
+            font-weight: 100;
+            font-size: 20px;
+        }
+
+        .content-bg-black div input[type=text] {
+            background-color: #272727;
+            color: #FFFFFF;
+            border: 1px solid rgb(169, 169, 169);
+            width: 170px;
+            margin-left: 0.5em;
+        }
+/*############# LOGIN ######################*/
+.main-wrapper {
+    height: 100%;
+    width: 100%;
+    background: url(../images/login_bg_shape.png) no-repeat;
+    background-size: 30em;
+}
+
+    .main-wrapper .ui-input-text {
+        width: 80%;
+        margin-left: 5%;
+        border-radius: 5px;
+        padding-left: 3em;
+    }
+
+.ui-input-text.icon-mail {
+    background-image: url(http://localhost:47058/images/icon_mail.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: 10px center !important;
+    background-size: 29px 22px !important;
+}
+
+.ui-input-text.icon-mail {
+    padding-top: 0.3em;
+    padding-bottom: 0em;
+    padding-left: 3em;
+}
+
+.tbl-input {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    /*width: 21.5em;*/
+    width: 90%;
+    border-radius: 4px;
+    height: 2.7em;
+    margin-left: 1.3em;
+    margin-top: 0.2em;
+}
+
+    .tbl-input .img-container {
+        padding-left: 0.5em;
+        width: 2.5em;
+    }
+
+        .tbl-input .img-container img {
+            width: 2em;
+            margin: 0px;
+        }
+
+    .tbl-input .input-container {
+        box-sizing: border-box;
+        outline: 0;
+    }
+
+        .tbl-input .input-container:focus {
+            box-shadow: none;
+        }
+
+        .tbl-input .input-container input {
+            width: 100%;
+            border: 0px;
+            height: 100%;
+            box-sizing: border-box;
+            outline: 0;
+        }
+
+.div-select {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    /*width: 21.5em;*/
+    width: 90%;
+    border-radius: 4px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 2.7em;
+    margin-left: 1.3em;
+    margin-top: 0.2em;
+    margin-bottom: 0.8em;
+}
+
+    .div-select .img-container {
+        padding-left: 0.5em;
+        width: 2.5em;
+    }
+
+        .div-select .img-container img {
+            width: 2em;
+            margin: 0px;
+        }
+
+    .div-select .select-container {
+        box-sizing: border-box;
+        outline: 0;
+        padding-bottom: 0em;
+        padding-top: 1em;
+        /*display: none;*/
+        /*width: 0em;*/
+    }
+
+    .div-select span {
+        color: rgb(169, 169, 169);
+    }
+
+    .div-select > table {
+        float: left;
+    }
+
+    .div-select > img {
+        float: right;
+        height: 2.7em;
+    }
+
+.bottom-text {
+    color: #000;
+    padding: 1.5em;
+    text-align: center;
+}
+
+    .bottom-text a {
+        color: #2eb135;
+    }
+
+.main-wrapper .ui-input-text input {
+    display: inline;
+    width: 80%;
+}
+
+.fb-btn-container {
+    width: 100%;
+    text-align: center;
+    padding-top: 4em;
+}
+
+    .fb-btn-container img {
+        width: 70%;
+    }
+
+.divider-or, .divider-or img {
+    /*background: url(../images/login_divider_or.png) no-repeat 0 100%;*/
+    width: 100%;
+    padding-top: 1.5em;
+    /*height: 3em;*/
+}
+
+/*############## BANNER ##########################*/
+.banner {
+    height: 15%;
+}
+
+    .banner .ui-grid-a {
+        height: 100%;
+    }
+
+        .banner .ui-grid-a .img_responsive {
+            height: 100%;
+        }
+
+/*################# PRODUCTS ##################*/
+.all_products {
+    height: 85%;
+}
+
+    .all_products .ui-grid-a {
+        height: 5%;
+    }
+
+        .all_products .ui-grid-a .ui-block-a h1, .all_products .ui-grid-a .ui-block-b a {
+            font-size: 1em;
+            margin-top: 0.2em;
+        }
+
+    .all_products .ui-grid-b {
+        height: 28%;
+        width: 100%;
+    }
+
+        .all_products .ui-grid-b > div {
+            height: 99%;
+            margin-bottom: 1.5em;
+        }
+
+    .all_products .small_box .prd_name {
+        padding-top: 0.3em;
+        padding-bottom: 0.4em;
+    }
+
+    .all_products .small_box img {
+        height: 80%;
+        width: 100%;
+    }
+
+    .all_products .small_box .full-size {
+        height: 98%;
+        text-decoration: none;
+        color: #656565;
+    }
+
+    .all_products .see-all-box {
+        height: 99% !important;
+        margin-top: 1%;
+        /*padding-top: 3.5em;
+        padding-bottom: .5em;*/
+        font-weight: bold;
+        border: 1px solid #dbdbd9;
+        padding-left: 1.1em;
+        background-color: #efefef;
+    }
+
+        .all_products .see-all-box span {
+            line-height: 8em;
+        }
+
+.pull_bottom {
+    margin-bottom: 1px;
+}
+
+/*################### Swipe bar ################*/
+.SwipeWrapper {
+    position: relative;
+    z-index: 1;
+    height: 99%;
+    width: 98%;
+    margin-left: 1%;
+    overflow: hidden;
+    -ms-touch-action: none;
+}
+
+    .SwipeWrapper h3 {
+        padding-left: 1em;
+        font-size: 1em;
+        width: 30em;
+    }
+
+.SwipeScroller {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    width: 1000px;
+    height: 97%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+    .SwipeScroller ul {
+        list-style: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
+
+    .SwipeScroller li {
+        float: left;
+        line-height: 99%;
+        height: 100%;
+        /* border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background-color: #fafafa;
+        font-size: 14px;
+        overflow: hidden;
+        text-align: center;*/
+    }
+
+
+/*####### COUPON DETAILS PAGE ############*/
+.coupon_box {
+    background-color: #fff;
+    border: #a8a8a8 dotted 3px;
+    outline: #F9F9F9 solid 4px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+    .coupon_box .expire_date span {
+        font-size: 0.7em;
+    }
+
+    .coupon_box .prd_preview {
+        margin-top: 2em;
+        width: 8em;
+        height: 8em;
+        margin-bottom: 2.5em;
+    }
+
+        .coupon_box .prd_preview img {
+            width: 8em;
+            height: 8em;
+        }
+
+    .coupon_box .free_text {
+        font-size: 1.1em;
+    }
+
+    .coupon_box .pr_detail {
+        font-size: 1em;
+        padding-right: 20%;
+    }
+
+    .coupon_box .my_coupon {
+        border-left: #a8a8a8 dotted 3px;
+        border-top: #a8a8a8 dotted 3px;
+        bottom: -3px;
+        right: -3px;
+        background-color: #F9F9F9;
+    }
+/*##### SEARCH PAGE ########*/
+.ui-grid-a.search-input {
+    background-color: #FFFFFF;
+    clear: both;
+    display: block;
+    margin-bottom: 1em;
+}
+
+    .ui-grid-a.search-input .ui-block-a {
+        width: 80%;
+        padding-left: 0.2em;
+    }
+
+    .ui-grid-a.search-input .ui-block-b {
+        width: 20%;
+        padding-left: 0.6em;
+        padding-top: 1em;
+    }
+
+        .ui-grid-a.search-input .ui-block-b a {
+            color: #2eb135;
+            font-size: 1.2em;
+            font-weight: 100;
+        }
+
+.ui-content-search {
+    background-color: #797979;
+    background-image: none !important;
+}
+
+    .ui-content-search.done {
+        background-color: #FFFFFF;
+    }
+
+    .ui-content-search .ui-listview {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+        .ui-content-search .ui-listview .ui-li-has-thumb a {
+            padding-left: 30%;
+        }
+
+        .ui-content-search .ui-listview .ui-li-has-thumb img {
+            height: 85%;
+            max-height: 100% !important;
+            max-width: 50% !important;
+            margin-top: 0.2em;
+            margin-left: 0.2em;
+            left: 0.2em;
+            top: 0.3em;
+        }
+
+        .ui-content-search .ui-listview .ui-li-has-thumb h1 {
+            color: #2eb135;
+        }
+
+.ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-thumb {
+    min-height: 68px !important;
+}
+
+.ui-li-has-arrow .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-arrow {
+    padding-right: 10% !important;
+}
+
+.ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-thumb {
+    padding-left: 25% !important;
+}
+
+/*######## MY COUPONS ###########*/
+.ui-tabs-nav li:first-child a {
+    border-radius: 0.5em 0 0 0.5em;
+}
+
+.ui-tabs-nav li:last-child a {
+    border-radius: 0 0.5em 0.5em 0;
+}
+
+table.mycoupon-item {
+    height: 8em;
+    width: 100%;
+}
+
+    table.mycoupon-item img {
+        height: 6em;
+        width: 6em;
+    }
+
+    table.mycoupon-item td.detail {
+        padding-left: 0.7em;
+    }
+
+        table.mycoupon-item td.detail h1 {
+            color: #2eb135;
+        }
+
+td.check-coupon {
+    vertical-align: top;
+}
+
+    td.check-coupon img {
+        width: 2em;
+        height: 2em;
+    }
+
+#mycouponscont {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.ui-content .ui-listview, .ui-panel-inner > .ui-listview {
+    margin: 0 !important;
+}
+
+.nodata {
+    color: #a8a8a8;
+    width: 350px;
+    height: 3em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -1.5em 0 0 -175px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.arrowup {
+    background-image: url(../images/arrow_up.png);
+    background-repeat: no-repeat !important;
+    background-position: right center !important;
+    background-size: 15px 15px !important;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+}
+
+.arrowdown {
+    background-image: url(../images/arrow_down.png);
+    background-repeat: no-repeat !important;
+    background-position: right center !important;
+    background-size: 15px 15px !important;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+}
+
+p {
+    color: #181818;
+    font-size: 1.3em;
+    padding-left: 1.7em;
+    padding-right: 1.7em;
+}
+
+.button {
+    background-color: #2eb135;
+    color: #FFFFFF !important;
+    font-size: 1.5em;
+    border: 1px solid #2eb135;
+    border-radius: .2em;
+    text-align: center;
+    padding: .2em 0;
+    font-weight: normal !important;
+    display: inline-block;
+}
+
+.disabled {
+    opacity: 0.4;
+}
+
+a.termsCondition {
+    color: #2eb135;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+    a.termsCondition:hover, a.termsCondition:active {
+        color: #2eb135;
+        text-decoration: none;
+        font-weight: normal;
+    }
+
+.offer_details p.title {
+    color: #656565 !important;
+    font-size: .9em;
+    padding-left: 5px;
+}
+
+.offer_details p {
+    color: #181818 !important;
+    font-size: .8em;
+}
+
+.deleteListItem {
+    background-color: #FF0000 !important;
+    text-align: center !important;
+    padding-top: 25px !important;
+    width: 100px !important;
+    color: #FFFFFF !important;
+    text-shadow: none !important;
+}
+
+    .deleteListItem::after, .deleteListItem:after {
+        content: '' !important;
+        background-color: transparent !important;
+        background-image: none !important;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0 !important;
+        border-radius: 0 !important;
+    }
+
+.butonNavBarMap, .butonNavBarMap:hover, .butonNavBarMap:active {
+    background: none !important;
+    width: 25px !important;
+    height: 25px !important;
+    box-shadow: none !important;
+    border: 0px !important;
+}
+
+    .butonNavBarMap::after, .butonNavBarMap::after:hover {
+        border: 0px !important;
+        box-shadow: none !important;
+        /*padding: 0px !important;
+	margin: 0px!important;*/
+        width: 24px;
+        height: 24px;
+        border-radius: 1em;
+        margin-left: -12px !important;
+        margin-top: -12px !important;
+    }
+
+
+ul.menuCouwalla a, ul.menuCouwalla a:hover, ul.menuCouwalla a:visited, ul.menuCouwalla a:active {
+    color: #ffffff !important;
+}
+
+ul.menuCouwalla img {
+    width: 45px;
+}
+
+ul.menuCouwalla .headerMenu {
+    background: #2eb135;
+    height: 70px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#listProfileform {
+}
+
+    #listProfileform li {
+        padding: 1px 7px !important;
+        background: #ffffff;
+    }
+
+        #listProfileform li table {
+            width: 100%;
+        }
+
+            #listProfileform li table tr td {
+                vertical-align: middle;
+                margin: 0px !important;
+            }
+
+                #listProfileform li table tr td:first-child {
+                    width: 100px;
+                }
+
+                #listProfileform li table tr td label {
+                    color: #181818;
+                    font-weight: bold;
+                    margin-top: 8px;
+                }
+
+                #listProfileform li table tr td div {
+                    margin: 0px !important;
+                    border: none !important;
+                    box-shadow: none !important;
+                }
+
+                    #listProfileform li table tr td div input {
+                        text-align: right !important;
+                        width: 100%;
+                        margin: 0px !important;
+                        border: none !important;
+                        box-shadow: none !important;
+                    }
+
+        #listProfileform li.separator {
+            background: none;
+        }
+
+            #listProfileform li.separator h3 {
+                text-transform: uppercase;
+                color: #2eb135;
+                font-size: 1em;
+            }
+
+
+.side_nav .icon img {
+    height: 30px;
+    width: 30px;
+}
+
+
+.side_nav .icon2 img {
+    height: 20px;
+    width: 30px;
+}
+
+ul.listCoupons li {
+    padding-top: 2px !important;
+    padding-bottom: 7px !important;
+}
+
+    ul.listCoupons li tr,
+    ul.listCoupons li td,
+    ul.listCoupons li td > div {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+
+.myParagraph {
+    padding: 0px !important;
+}
+
+.coupon_nav img {
+    width: 60px;
+}
+
+
+#divStoreDetails {
+    width: 100%;
+    height: 20%;
+    max-height: 20%;
+}
+
+    #divStoreDetails > table {
+        width: 100%;
+        height: 100%;
+        border: 0px;
+        margin-top: 5px;
+    }
+
+        #divStoreDetails > table .logo {
+            width: 30%;
+            padding-top: 0px;
+            vertical-align: top;
+            position: relative;
+            text-align: center;
+            /*display: inline-block;*/
+        }
+
+        #divStoreDetails > table .details {
+            /*font-size: 0.7rem;*/
+            width: 65%;
+            padding-top: 0px;
+            vertical-align: top;
+            position: relative;
+            /*display: inline-block;*/
+        }
+
+@media only screen and (max-width: 320px) {
+    #divStoreDetails > table .details {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    #divStoreDetails > table .details {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    #divStoreDetails > table .details {
+        font-size: 1.4rem;
+    }
+}
+
+#divStoreDetails > table .navigation {
+    padding-top: 0px;
+    vertical-align: top;
+    width: 90px;
+    position: relative;
+    /*display: inline-block;*/
+}
+
+
+/*iScroll*/
+
+#wrapper {
+    /*position: absolute;*/
+    z-index: 1;
+    /*top: 45px;
+    bottom: 48px;*/
+    /*left: -9999px;*/
+    width: 100%;
+    /*background: #aaa;*/
+    overflow: auto;
+}
+
+#scroller {
+    /*position: absolute;*/
+    z-index: 1;
+    /*	-webkit-touch-callout:none;*/
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    width: 100%;
+    height: 85%;
+    padding: 0;
+}
+
+
+#myFrame {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@-webkit-keyframes loading {
+    from {
+        -webkit-transform: rotate(0deg) translateZ(0);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg) translateZ(0);
+    }
+}

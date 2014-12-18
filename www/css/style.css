@@ -1,0 +1,394 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/*.header {
+    background-color: #2eb135 !important;
+    height: 60px;
+    border: none !important;
+    border-bottom: #369535 solid 2px !important;
+    margin: 0px !important;
+}*/
+
+/*.header .nav_icon {
+        min-width: 40px;
+        height: 20px;
+        background: url(../images/three_lines.png)#43b94a no-repeat center center !important;
+        border: none;
+        margin-top: 7px !important;
+    }
+
+        .header .nav_icon:hover, .header .nav_icon:focus, .header .nav_icon:active {
+            background: url(../images/three_lines.png)#56b55c no-repeat center center !important;
+        }*/
+
+/*.header .search_icon {
+        min-width: 40px;
+        height: 20px;
+        margin-top: 7px !important;
+        background: url(../images/search_icon.png)#43b94a no-repeat center center !important;
+        border: none;
+    }
+
+        .header .search_icon:hover, .header .search_icon:focus, .header .search_icon:active {
+            background: url(../images/search_icon.png)#56b55c no-repeat center center !important;
+        }*/
+
+/*.header .back {
+        min-width: 40px;
+        height: 20px;
+        background: url(../images/back.png)#43b94a no-repeat center center !important;
+        border: none;
+        margin-top: 7px !important;
+    }
+
+        .header .back:hover, .header .back:focus, .header .back:active {
+            background: url(../images/back.png)#56b55c no-repeat center center !important;
+        }*/
+
+/*.header .map {
+        min-width: 40px;
+        height: 20px;
+        background: url(../images/map.png)#43b94a no-repeat center center !important;
+        border: none;
+        margin-top: 7px;
+    }
+
+        .header .map:hover, .header .map:focus, .header .map:active {
+            background: url(../images/map.png)#56b55c no-repeat center center !important;
+        }*/
+
+/*.header h1 {
+        font-size: 24px !important;
+        color: #ffffff !important;
+        margin: 12px 0 0 !important;
+        padding: 0px !important;
+    }
+
+        .header h1 a {
+            color: #ffffff !important;
+            text-decoration: none;
+            text-shadow: none;
+        }*/
+
+.side_nav {
+    background: url(../images/side_nav_bg.png) repeat !important;
+}
+
+    .side_nav ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+        .side_nav ul li {
+            list-style: none;
+            font-size: 20px;
+            padding: 0px 0 0 0;
+            margin: 0px;
+            position: relative;
+            text-shadow: none;
+            background: url(../images/devider.png) repeat-x left bottom;
+        }
+
+            .side_nav ul li a {
+                list-style: none;
+                font-size: 20px;
+                padding: 12px 20px 15px 60px;
+                margin: 0px;
+                color: #fff;
+                display: block;
+                text-shadow: none;
+                text-decoration: none;
+            }
+
+                .side_nav ul li a:hover {
+                    color: #fff;
+                    background-color: #2eb135;
+                }
+
+    .side_nav .ui-panel-inner {
+        padding: 0px;
+    }
+
+    .side_nav .icon {
+        display: inline-block;
+        position: absolute;
+        left: 15px;
+        top: 10px;
+    }
+
+    .side_nav .icon2 {
+        display: inline-block;
+        position: absolute;
+        left: 15px;
+        top: 19px;
+    }
+
+    .side_nav .close_btn {
+        position: absolute;
+        right: 0px;
+        top: 10px;
+    }
+
+
+.pattern {
+    background: url(../images/pattern.jpg) repeat !important;
+}
+
+.rl {
+    position: relative;
+}
+
+.img_responsive {
+    display: inline-block;
+    width: 100%;
+}
+
+.padding_zero {
+    /*padding: 0px !important;*/
+}
+
+.black_bg {
+    background: url(../images/black_bg.png) repeat;
+    padding: 10px;
+    position: absolute;
+    left: 0px;
+    bottom: 4px;
+    min-width: 250px;
+}
+
+    .black_bg .col_one {
+        width: 40%;
+        float: left;
+    }
+
+        .black_bg .col_one .name {
+            display: block;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            color: #FFF;
+            text-align: center;
+            font-size: 16px;
+            text-shadow: none;
+        }
+
+        .black_bg .col_one a.buy_now {
+            display: block;
+            background: #fe7c0a;
+            padding: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 17px;
+            text-shadow: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+    .black_bg .col_two {
+        width: 50%;
+        padding-top: 5px;
+        float: right;
+    }
+
+        .black_bg .col_two .discount {
+            display: inline-block;
+            font-size: 62px;
+            color: #fff;
+            line-height: 0px;
+        }
+
+        .black_bg .col_two .percentage {
+            display: inline-block;
+            font-size: 20px;
+            color: #fff;
+        }
+
+.all_products {
+    padding: 0px;
+    margin: 0px;
+}
+
+.padding_left {
+    padding-left: 15px;
+}
+
+.padding_right {
+    padding-right: 15px;
+}
+
+.text_right {
+    text-align: right;
+}
+
+.pull_bottom {
+    margin-bottom: 15px;
+}
+
+.all_products h1 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #2c2c2c;
+}
+
+.all_products a.see_all {
+    display: inline-block;
+    background: url(../images/arrow.png) no-repeat right center;
+    padding: 0 25px 0 0;
+    font-size: 25px;
+    color: #656565;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.all_products .small_box {
+    border: #dbdbd9 solid 1px;
+    background-color: #efefef;
+    margin: 0 3px 0 3px;
+}
+
+    .all_products .small_box .offer_box {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        color: #ffffff;
+        /*font-size: 25px;*/
+        text-align: center;
+        /*min-width: 65px;*/
+        text-shadow: none;
+        /*line-height: 27px;*/
+        background: url(../images/offer_bg.jpg) repeat;
+        /*padding: 7px 2px 7px 2px;*/
+    }
+
+
+    .all_products .small_box .prd_name {
+        color: #272727;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        padding: 5px 10px 10px 10px;
+        display: block;
+        text-decoration: none;
+    }
+
+    .all_products .small_box a.prd_name {
+        text-decoration: none !important;
+    }
+
+.padding_around {
+    padding: 15px;
+}
+/*.coupon_box{
+	background-color:#fff;
+	border:#a8a8a8 dashed 4px;
+	outline:#e7e7e8 solid 8px;
+}*/
+
+.coupon_box .lrd_img {
+    width: 100%;
+    max-width: 160px;
+}
+
+.coupon_box .compay_logo {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.coupon_box .prd_preview {
+    background-color: #ffffff;
+    border: #d4d4d4 solid 1px;
+    outline: #fff solid 4px;
+    -moz-box-shadow: 0 0 5px 5px #888;
+    -webkit-box-shadow: 0 0 5px 5px#888;
+    box-shadow: 0 0 5px 5px #888;
+    margin: 0 0 10px 10px;
+}
+
+.coupon_box .expire_date {
+    color: #656565;
+    font-size: 18px;
+    padding-left: 35px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+    .coupon_box .expire_date span {
+        color: #2eb135;
+        font-size: 23px;
+    }
+
+.coupon_box .free_text {
+    color: #2c2c2c;
+    padding: 0 0 0 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.coupon_box .pr_detail {
+    color: #656565;
+    padding: 10px 0 0 0px;
+    font-size: 20px;
+}
+
+.coupon_box .my_coupon {
+    background-color: #e7e7e8;
+    padding: 11px 10px 4px 10px;
+    text-align: center;
+    border-top: #a8a8a8 dashed 4px;
+    border-left: #a8a8a8 dashed 4px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+    .coupon_box .my_coupon .krc {
+        position: absolute;
+        top: 11px;
+        left: -12px;
+    }
+
+ul.coupon_nav {
+    margin: 20px 0 0 0;
+    padding: 0px;
+    text-align: center;
+}
+
+    ul.coupon_nav li {
+        margin: 0px 10px;
+        padding: 0px;
+        display: inline-block;
+        list-style: none;
+        max-width: 70px;
+        vertical-align: top;
+    }
+
+        ul.coupon_nav li a {
+            color: #656565;
+            text-decoration: none;
+            text-shadow: none;
+            font-weight: normal;
+            font-size: .8em;
+        }
+
+.offer_details {
+    padding: 10px 20px 20px 20px;
+    background-color: #FFF;
+    margin-top: 15px;
+}
+
+    .offer_details h1 {
+        margin: 0px 0 10px;
+        padding: 0px;
+    }
+
+    .offer_details p {
+        margin: 0px;
+        padding: 0px;
+        color: #656565;
+    }
+
+	#banners {
+		height: 72px !important;
+	}

@@ -1,0 +1,16 @@
+﻿<script id="search-result" type="text/html">
+    <ul data-role="listview" id="lstResultSearch" data-theme="c" style="padding: 0px;" class="pattern">
+        {{#list}}
+        <li data-theme="c" class="pattern">
+            <a href="javascript:CouponCtrl.couponDetail('{{id}}');" class="pattern">
+                <img src="{{coupon_thumbnail}}" />
+                <h1 class="myHeader"> {{customer_name}}</h1>
+                <p class="myParagraph">{{promo_text_short}}</p>
+                <p class="myParagraph">{{promo_text_long}}</p>
+                <p class="myParagraph">Expires on {{expiry_date}}</p>
+            </a>
+            </a>
+        </li>
+        {{/list}}
+    </ul>
+</script>

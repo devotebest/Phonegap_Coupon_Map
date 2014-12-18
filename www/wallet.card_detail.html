@@ -1,0 +1,32 @@
+﻿<div data-role="page" id="card-detail-page" data-url="card-detail-page">
+    <!--start header-->
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" class="header">
+        <h1>Wallet Preview</h1>
+        <a href="javascript:WalletCtrl.cardBackAction();" data-iconpos="notext" data-icon="cback" data-corners="false" class="back" id="btnBackCoupon"></a>
+        <a href="#"data-role="button" data-icon="false" class="ui-btn-right" onclick="WalletCtrl.editCard();">Edit</a>
+    </div>
+    <!-- /header -->
+    <!--start main content-->
+    <div role="main" class="ui-content padding_zero pattern _ezswipe">
+        <p>Card Name: <span id="lblCardDetName"></span></p>
+        <div id="divCardDetBarcode"></div>
+
+        <p id="lblCardDetBarcodeText"></p>
+
+        <table>
+            <tr>
+                <td>Front</td>
+                <td>Back</td>
+            </tr>
+            <tr>
+                <td>
+                    <img id="imgCardDetFront" />
+                </td>
+                <td>
+                    <img id="imgCardDetBack" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!--/. end main content-->
+</div>

@@ -1,0 +1,38 @@
+﻿<div data-role="page" id="new-loyalty-page" data-url="new-loyalty-page">
+    <!--start header-->
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" class="header">
+        <h1 class="headerTitle">New Wallet Card</h1>
+        <a href="#index-page" data-iconpos="notext" data-icon="cback" data-corners="false" class="back" id="btnBackCoupon"></a>
+        <a href="#Home" data-role="button" data-iconpos="notext" class="ui-btn-right button">Save</a>
+    </div>
+    <!-- /header -->
+    <!--start main content-->
+    <div role="main" class="ui-content pattern">
+        <input type="text" placeholder="Loyalty Card Name" id="txtLoyaltyCardName" />
+        <h3>Add Photos of Card</h3>
+
+        <div style="width:100%;">
+            <div>
+                <div>
+                    <img id="imgFrontCard" style="width:100px; height:100px;" />
+                    <a class="button" href="#" onclick="WalletCtrl.takePicture('imgFrontCard');">Front</a>
+                </div>
+                <div>
+                    <img id="imgBackCard" style="width:100px; height:100px;" />
+                    <a class="button" href="#" onclick="WalletCtrl.takePicture('imgBackCard');">Back</a>
+                </div>
+            </div>
+        </div>
+
+        <h3>Add Barcode</h3>
+        <div id="imgBarCodeScanned">
+
+        </div>
+        <a class="button" href="#" onclick="WalletCtrl.scanCode();">Scan</a>
+
+        <a class="button" href="#">Enter Manually</a>
+
+        <input type="text" id="txtManuallyBarCode" />
+    </div>
+    <!--/. end main content-->
+</div>

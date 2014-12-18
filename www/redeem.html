@@ -1,0 +1,44 @@
+﻿<div data-role="page" id="redeem-page" data-url="redeem-page">
+    <!--start header-->
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" class="header">
+        <h1></h1>
+        <a href="javascript:RedeemCtrl.back();" data-iconpos="notext" data-icon="cback" data-corners="false" class="back"></a>
+        <a href="javascript:RedeemCtrl.preRedeem();" data-role="button">Redeem</a>
+    </div>
+    <!-- /header -->
+    <!--start main content-->
+    <div role="main" class="ui-content padding_zero _ezswipe headerSpace">
+        <p id="countDownRedeem" style="color:#f00; text-align:center;">
+        </p>
+        <div id="listCouponsContainer" style="width:100%;">
+            <div style="width: 94%; background: #FFFFFF; margin-left: 3%; margin-right: 3%; border-radius: 10px; margin-bottom: 10px; text-align: center; padding-top: 10px;">
+                <div style="width:100%; text-align:center; display:block;">
+                    <div id="redeemImage" class="barcode" style="height: 100px; margin-left: auto; margin-right: auto; display: inline-block; "></div>
+                </div>
+                <span style="font-size:12px;">*To finalize your coupon redemtion, please click the redeem button above.</span>
+            </div>
+            <table style="width: 94%; margin-right: auto; margin-left: auto;">
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top; width: 105px;">
+                            <img src="" id="redeemImageThumb" style="width: 100px;height:100px;" />
+                        </td>
+                        <td style="vertical-align:top;">
+                            <span id="redeemName"></span><br />
+                            <span id="redeemPromoTextLong"></span><br />
+                            <span id="redeemPromoTextShort"></span><br />
+                            <span id="redeemCustomerName"></span><br />
+                            Expires on <span id="redeemExpiry_date"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a href="javascript:void(0);" id="redeemTerms" data-idcoupon="{{id}}" data-role="link">*TERMS & CONDITIONS APPLY</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--/. end main content-->
+</div>

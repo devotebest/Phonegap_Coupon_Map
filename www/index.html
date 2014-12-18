@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Couwalla</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--<link rel="stylesheet" href="css/jquery.mobile-1.4.4.min.css" />-->
+    <link rel="stylesheet" href="css/couwalla.min.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.4.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/patch.css" />
+    <!--<script type="text/javascript" src="cordova.js"></script>-->
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript">
+        //$(document).on("mobileinit", function () {
+        //    //$.mobile.buttonMarkup.hoverDelay = 0;
+        //    //$.mobile.phonegapNavigationEnabled = true;
+        //    $.mobile.autoInitializePage = false;
+        //    alert(window.location.hash);
+        //    // $(":mobile-pagecontainer").pagecontainer("change", "#index-page", { transition: transition, showLoadMsg: true, reverse: reverse });
+        //});
+        //$("body").pagecontainer("pagecontainerbeforehide", function () { alert('asdasdgdfasse'); });
+    </script>
+    <script src="js/jquery.mobile-1.4.4.min.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script src="js/iscroll_pull.js"></script>
+    <script src="js/jquery.transit.min.js"></script>
+    <script src="js/_ezswipe.js"></script>
+    <script src="js/mustache.js"></script>
+    <script src="js/jquery.mustache.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.cycle.all.js"></script>
+    <script src="js/jquery-barcode.min.js"></script>
+    <script src="js/jquery.batchImageLoad.js"></script>
+    <script src="js/jquery.scrollz.min.js"></script>
+    <script src="js/jquery.unveil.js"></script>
+    <script type="text/javascript" src="js/distimosdk/distimosdk.js"></script>
+    <script src="js/openfb.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="js/start.js"></script>
+    <script type="text/javascript">
+        fnStart();
+    </script>
+</head>
+
+<body>
+    <div data-role="page" id="bridge-page" data-url="bridge-page" class="index">
+        <!--start main content-->
+        <div role="main" style="background: url('images/splash.png'); background-size: 100% 100%;" class="ui-content">
+
+        </div>
+        <!--/. end main content-->
+    </div>
+    <div data-role="page" id="login-page" data-url="login-page">
+        <!--start header-->
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" class="header">
+            <div class="img-center" style="margin-left: auto; margin-right: auto; margin-top: 0px; width:160px;">
+                <img src="images/couwalla_logo.png" style="height:40px" />
+            </div>
+        </div>
+        <!-- /header -->
+        <!--start main content-->
+        <div role="main" class="ui-content padding_zero pattern _ezswipe">
+            <div class="main-wrapper">
+                <div class="fb-btn-container">
+                    <img src="images/btn_login_fb.png" onclick="loginFB();" />
+                </div>
+                <div class="divider-or">
+                    <img src="images/login_divider_or.png" />
+                </div>
+                <br />
+                <table style="width: 90%; margin-left: 5%;">
+                    <tr>
+                        <td colspan="2">
+                            <div id="inputs">
+                                <table class="tbl-input" id="tbl_input_Email">
+                                    <tr>
+                                        <td class="img-container">
+                                            <img src="images/icon_mail.png" />
+                                        </td>
+                                        <td class="input-container">
+                                            <input type="text" data-enhanced="true" data-corners="false" id="txtEmail" placeholder="Email Address" value="betopone1021@gmail.com">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="tbl-input" style="margin-top: 0.7em;" id="tbl_input_EmailConf">
+                                    <tr>
+                                        <td class="img-container">
+                                            <img src="images/icon_mail.png" />
+                                        </td>
+                                        <td class="input-container">
+                                            <input type="text" data-enhanced="true" data-corners="false" id="txtEmailConfirm" placeholder="Confirm Email Address">
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <div class="div-select" style="margin-top: 0.7em;" id="div_select_gender">
+                                    <table>
+                                        <tr>
+                                            <td class="img-container">
+                                                <img src="images/icon_genre.png" />
+                                            </td>
+                                            <td class="select-container" style="padding-top: 0.2em;">
+                                                <span id="lblSelGender" class="lblSelGender">Gender</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <img src="images/login_dropdown_arrow.png" />
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="height:10px;"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/login_link_login.png" style="height: 1.3em; cursor: pointer;"
+                                 data-action="login" onclick="changeAction(this);" />
+                        </td>
+                        <td style="text-align: right;">
+                            <img src="images/login_btn_signup.png" style="height: 2.5em; cursor: pointer;"
+                                 id="btnAction" data-action="signup" onclick="doAction(this);" />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <div class="bottom-text">
+                    By joining Couwalla you are agreeing to our <a href="#">Privacy Policy</a> &amp; <a href="#">Terms and Conditions</a>
+                </div>
+                <!-- GENDER POPUP -->
+                <div data-role="popup" id="popupGender">
+                    <ul data-role="listview" id="lwGender">
+                        <li data-role="list-divider">Select a gender..</li>
+                        <li style="background: #ffffff;" onclick="selectGender('Male');">Male</li>
+                        <li style="background: #ffffff;" onclick="selectGender('Female');">Female</li>
+                    </ul>
+                </div>
+                <!-- END GENDER POPUP -->
+            </div>
+        </div>
+        <!--/. end main content-->
+    </div>
+    <div data-role="page" id="index-page" data-url="index-page" class="index headerIndexPatch">
+        <!--start header-->
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" class="header">
+            <h1><a href="#category" style="padding-left: 15px;">Category<span class="arrowdown"></span></a></h1>
+            <a href="#main-nav-panel" data-iconpos="notext" data-icon="cmenu" data-corners="false"></a>
+            <a href="#search-page" data-iconpos="notext" data-icon="csearch" data-corners="false"></a>
+        </div>
+        <!-- /header -->
+        <!--start main content-->
+        <div role="main" id="homeContent" class="ui-content padding_zero pattern index">
+            <div style="display:none; text-align:center;" id="lblHomeLoading" data-visible="false">
+                <img src="images/spinner.gif" style="width:3em; height:3em;" />
+            </div>
+            <div id="pullDown" style="display:none;">
+                <span class="pullDownIcon"></span><span class="pullDownLabel">Pull down to refresh...</span>
+            </div>
+            <div id="wrapper">
+                <div id="scroller">
+                    <div style="display:none; text-align:center;" id="lblHomeIntLoading">
+                        <img src="images/spinner.gif" style="width:3em; height:3em;" />
+                    </div>
+
+                    <!--start banner from here-->
+                    <div class="banner">
+                        <div class="ui-grid-a rl">
+                            <div id="banners">
+                            </div>
+                        </div>
+                    </div>
+                    <!--/. end banner from here-->
+                    <!--all products-->
+                    <div class="all_products">
+                        <!--hot product section-->
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a padding_left">
+                                <h1>What's Hot</h1>
+                            </div>
+                            <div class="ui-block-b text_right padding_right"><a href="javascript:void(0);" onclick="HomeCtrl.seeAllCoupons('Hot'); " class="see_all">See All</a></div>
+                        </div>
+                        <!-- /grid-a -->
+                        <!--three products row-->
+                        <div class="ui-grid-b pull_bottom" id="divHotPrd">
+                            <div class="SwipeWrapper">
+                                <div class="SwipeScroller">
+                                    <ul id="ulHotPrd"></ul>
+                                    <h3 id="lblNoHotCoupon" style="display:none;">No coupons found please try later.</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/. end three products row-->
+                        <!--/. end hot product section-->
+                        <!--most popular product section-->
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a padding_left">
+                                <h1>Most Popular</h1>
+                            </div>
+                            <div class="ui-block-b text_right padding_right"><a href="javascript:void(0);" onclick="HomeCtrl.seeAllCoupons('Popular');" class="see_all">See All</a></div>
+                        </div>
+                        <!-- /grid-a -->
+                        <!--three products row-->
+                        <div class="ui-grid-b" id="divPopPrd">
+                            <div class="SwipeWrapper">
+                                <div class="SwipeScroller">
+                                    <ul id="ulPopPrd"></ul>
+                                    <h3 id="lblNoPopCoupon" style="display:none;">No coupons found please try later.</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/. end three products row-->
+                        <!--/. end most popular section-->
+                        <!--Near product section-->
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a padding_left">
+                                <h1>Near Me</h1>
+                            </div>
+                            <div class="ui-block-b text_right padding_right"><a href="javascript:void(0);" onclick="HomeCtrl.seeAllCoupons('Near');" class="see_all">See All</a></div>
+                        </div>
+                        <!-- /grid-a -->
+                        <!--three products row-->
+                        <div class="ui-grid-b pull_bottom" id="divNearPrd">
+                            <div class="SwipeWrapper">
+                                <div class="SwipeScroller">
+                                    <ul id="ulNearPrd"></ul>
+                                    <h3 id="lblNoNearCoupon" style="display:none;">No coupons currently found near you.</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/. end three products row-->
+                        <!--/. end Near product section-->
+                    </div>
+                    <!--/. end all products-->
+
+                    <div id="pullUp" style="display:none;">
+                        <span class="pullUpIcon"></span><span class="pullUpLabel">Pull up to refresh...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/. end main content-->
+        <!--nav bar panel-->
+        <div data-role="panel" data-position-fixed="true" data-display="push" class="side_nav" id="main-nav-panel" data-swipe-close="false">
+            <ul class="menuCouwalla">
+                <li class="headerMenu">
+                    <img src="images/couwalla_logo.png" style="width: 200px; margin-top: 5px;" />
+                </li>
+                <li>
+                    <a href="#index-page">
+                        <span class="icon">
+                            <img src="images/coupons_icon.png" alt="">
+                        </span>Coupons
+                    </a>
+                </li>
+                <li>
+                    <a href="#mycoupons-page">
+                        <span class="icon2">
+                            <img src="images/my_coupons.png" alt="">
+                        </span> My Coupons
+                    </a>
+                </li>
+                <li>
+                    <a href="#wallet-page">
+                        <span class="icon">
+                            <img src="images/wallet.png" alt="">
+                        </span> Wallet
+                    </a>
+                </li>
+                <!--<li>
+                    <a href="#storesbrands-page">
+                        <span class="icon2">
+                            <img src="images/store.png" alt="">
+                        </span> Stores & Brands
+                    </a>
+                </li>-->
+                <li>
+                    <a href="#location-page">
+                        <span class="icon">
+                            <img src="images/location.png" alt="">
+                        </span> Location
+                    </a>
+                </li>
+                <li>
+                    <a href="#feedback-page">
+                        <span class="icon">
+                            <img src="images/survay.png" alt="">
+                        </span> Feedback
+                    </a>
+                </li>
+                <li>
+                    <a href="#profile-page">
+                        <span class="icon">
+                            <img src="images/profile.png" alt="">
+                        </span> My Profile
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /panel -->
+    </div>
+
+    <div data-role="page" id="feedback-page" data-url="feedback-page">
+        <!--start header-->
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" class="header">
+            <h1>Feedback</h1>
+            <a href="javascript:openCloseMenu('nav-panel-feedback');" data-iconpos="notext" data-icon="cmenu" data-corners="false"></a>
+        </div>
+        <!-- /header -->
+        <!--start main content-->
+        <div role="main" class="ui-content padding_zero _ezswipe" style="background: #FFFFFF;">
+            <iframe style="height: 100%; width: 100%; border: 0px;" id="ifrSurvey"></iframe>
+        </div>
+        <!--/. end main content-->
+        <!--nav bar panel-->
+        <div data-role="panel" data-position-fixed="true" data-display="push" class="side_nav" id="nav-panel-feedback" data-swipe-close="false">
+
+        </div>
+        <!-- /panel -->
+    </div>
+
+    <div data-role="page" id="iframe-page" data-url="iframe-page">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" class="header">
+            <h1 id="iframe-page-title"></h1>
+            <a href="javascript:iframeCtrl.backAction();" data-iconpos="notext" data-icon="cback" data-corners="false" class="back"></a>
+        </div>
+        <div role="main" class="ui-content padding_zero _ezswipe headerSpace" style="background: #FFFFFF;">
+            <iframe style="height: 100%; width: 100%; border: 0px;" id="iframe-page-iframe"></iframe>
+        </div>
+    </div>
+</body>
+</html>
